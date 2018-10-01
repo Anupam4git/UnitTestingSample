@@ -22,7 +22,7 @@ namespace TestsCore
             object dependency;
             if (!this.dependencyMap.TryGetValue(type, out dependency))
             {
-                throw new Exception($"Testing object doesn't contain dependency of type {type}.");
+                throw new Exception($"Testing object doesn't contain any dependency of type {type}.");
             }
 
             return dependency as TDependency;
